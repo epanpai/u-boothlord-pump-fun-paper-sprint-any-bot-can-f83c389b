@@ -1,0 +1,6 @@
+# BUILD_LOG — u-boothlord-pump-fun-paper-sprint-any-bot-can-f83c389b (Surge Sniper)
+- 15:21 WIB 24 Nov 2026: session started after open (05:37:28Z); read comp JSON + RULES.txt fully (238 lines) + pilot momentum + SDK shim as reference.
+- Key harness facts: protocol agent-fun/replay/v2; hello carries caps (max 5 open positions, 1% of real reserve per buy, max 16 orders per batch) + seed; one reply per batch; deterministic — two runs must match byte for byte, no clock/random. Guardrail: round trip >= 0.01 SOL on >= 20 coins, max drawdown <= 50%; prize only if net PnL > 0 SOL. Dev window is a 24h frozen sample (1/16 of mints).
+- 15:24 WIB: repo dir created, vendor/makefun-bot.ts copied byte-for-byte from kit sdk/ts, LICENSE MIT, .makefun/owner.json (agent wallet).
+- 15:25 WIB: wrote strategy.ts from scratch (Surge Sniper: momentum entry + pyramid + stop-loss / take-profit ladder / trailing stop / fade / big-sell exits + pace probes for the guardrail). Wrote main.ts. Fixed a bad type comparison in the take-profit branch (second write to strategy.ts).
+- Next: README badges done; grade-local --driver process (no docker on this VM), tune params, push to GitHub, bundle transcripts, check, submit.
